@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Virtus Portões — soluções em portões automáticos, portões sob medida e serralheria em São Bernardo do Campo.">
+<title>Virtus Portões | Soluções em Portões Automáticos</title>
+<style>
+:root{--gold:#C49A52;--navy:#14283F;--dark:#101317;--cream:#f7f6f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--dark);color:#f8f7f4}
+.container{width:min(1120px,calc(100% - 36px));margin:auto}
+header{background:#0b0d10;border-bottom:1px solid #604c2b;position:relative;z-index:2}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:white;font-weight:900;letter-spacing:1px}
+.brand-mark{font-size:23px;color:var(--gold);border:2px solid var(--gold);padding:8px;letter-spacing:-3px}
+.brand-name span{color:var(--gold)}.nav-links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:#eee;text-decoration:none;font-size:14px}.nav-links a:hover{color:var(--gold)}
+.btn{display:inline-flex;justify-content:center;align-items:center;text-align:center;padding:13px 18px;border-radius:6px;font-weight:800;text-decoration:none;border:1px solid var(--gold)}
+.btn-gold{background:var(--gold);color:#111}.btn-outline{color:var(--gold);background:transparent}
+.hero{padding:clamp(55px,9vw,110px) 0;background:radial-gradient(ellipse at 85% 25%,#c49a522b,transparent 38%),linear-gradient(125deg,#101317,var(--navy))}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+h1{font-size:clamp(38px,5.6vw,64px);line-height:1.05;margin:18px 0;letter-spacing:-1.5px}h1 span{color:var(--gold)}
+.hero p,.section-head p,.why p,.contact p{color:#d0d5db;line-height:1.75;font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-art{min-height:280px;border:1px solid #c49a5270;border-radius:14px;padding:20px;display:grid;place-items:center;background:#ffffff0a}
+.gate{width:100%;max-width:390px;aspect-ratio:1.15;border:7px solid var(--gold);border-bottom-width:10px;background:repeating-linear-gradient(90deg,#273342 0 17px,#101923 17px 22px);position:relative}
+.gate:before{content:"";position:absolute;inset:14px;border:1px solid #c49a52a6}.gate:after{content:"VIRTUS";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:30px;letter-spacing:5px;font-weight:900}
+section{padding:72px 0}.light{background:#f1eee7;color:#17202a}.section-head{text-align:center;max-width:700px;margin:0 auto 34px}.section-head h2,.contact h2,.why h2{font-size:clamp(29px,4vw,42px);margin:12px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;color:#17202a;border:1px solid #e4ded2;border-radius:10px;padding:22px;min-width:0}.card p{color:#58616b;line-height:1.7}
+.catalog-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-bottom:14px}.catalog-gallery img{display:block;width:100%;aspect-ratio:1.1;object-fit:cover;border:4px solid var(--gold);border-radius:5px}
+.art{width:100%;aspect-ratio:1.45;border:5px solid var(--gold);margin-bottom:14px;position:relative;background:linear-gradient(145deg,#d9d9d4,#858d94);overflow:hidden}
+.art span{position:absolute;inset:0 12%;border-left:5px solid #293543;border-right:5px solid #293543;background:repeating-linear-gradient(90deg,transparent 0 17px,#293543 17px 22px)}
+.rail{background:linear-gradient(165deg,#263647,#10161d)}.rail span{inset:18% 12% 8%;border:0;border-left:5px solid var(--gold);border-bottom:5px solid var(--gold);transform:skewY(-15deg);background:repeating-linear-gradient(90deg,transparent 0 28px,var(--gold) 28px 32px)}
+.catalog-cta{width:100%;margin-top:12px}
+.why{background:var(--navy)}.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:14px}.benefit{border:1px solid #c49a5270;padding:18px;border-radius:8px;background:#0002}.benefit strong{display:block;color:var(--gold);margin-bottom:8px}.benefit span{font-size:14px;line-height:1.6;color:#d7dce2}
+.contact{background:#0b0d10}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}.contact-card{border:1px solid #c49a5266;border-radius:10px;padding:25px;background:#ffffff09}.contact-item{margin-bottom:18px}.contact-item small{display:block;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}.contact-item strong{overflow-wrap:anywhere}
+footer{border-top:1px solid #252a30;padding:24px 0;color:#aeb5bd;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.whatsapp-float{position:fixed;z-index:5;right:16px;bottom:16px;background:#25d366;color:#082d16;text-decoration:none;font-weight:900;border-radius:999px;padding:14px 17px;box-shadow:0 6px 24px #0005}
+@media(max-width:760px){.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.cards{grid-template-columns:1fr}.nav{align-items:flex-start}.nav-links{gap:13px}.hero-art{min-height:220px}.benefits{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.benefits{grid-template-columns:1fr}.container{width:calc(100% - 28px)}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#inicio"><span class="brand-mark">-V-</span><span class="brand-name">VIRTUS <span>PORTÕES</span></span></a>
+<nav class="nav-links" aria-label="Navegação"><a href="#catalogo">Catálogo</a><a href="#servicos">Serviços</a><a href="#sobre">Por que escolher</a><a href="#contato">Contato</a><a class="btn btn-gold" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20com%20a%20Virtus%20Port%C3%B5es" target="_blank" rel="noopener">Pedir orçamento</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid"><div><div class="eyebrow">Qualidade • Segurança • Confiança</div><h1>Seu projeto merece um portão <span>à altura.</span></h1><p>Soluções em portões automáticos com atenção aos detalhes, acabamento profissional e instalação. Fale com a Virtus Portões e solicite seu orçamento.</p><div class="actions"><a class="btn btn-gold" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento" target="_blank" rel="noopener">Solicitar orçamento no WhatsApp</a><a class="btn btn-outline" href="#servicos">Conhecer serviços</a></div></div><div class="hero-art" aria-label="Ilustração decorativa de portão moderno"><div class="gate"></div></div></div></section>
+<section class="light" id="servicos"><div class="container"><div class="section-head"><div class="eyebrow">O que fazemos</div><h2>Soluções para sua entrada</h2><p>Serviços pensados para unir funcionalidade, segurança e um acabamento que valoriza seu imóvel.</p></div><div class="cards">
+<article class="card"><h3>Portões automáticos</h3><p>Projetos de portões com automatização para facilitar o dia a dia e trazer mais praticidade.</p></article>
+<article class="card"><h3>Portões sob medida</h3><p>Soluções planejadas conforme as medidas e as necessidades do seu espaço.</p></article>
+<article class="card"><h3>Serralheria e instalação</h3><p>Execução e instalação com foco em estrutura, funcionamento e acabamento.</p></article>
+</div></div></section>
+<section class="light" id="catalogo" style="background:#e8e4dc"><div class="container"><div class="section-head"><div class="eyebrow">Catálogo Virtus</div><h2>Conheça nossos modelos</h2><p>Veja algumas opções de portões, grades e corrimãos. Os modelos podem ser adaptados às medidas e ao estilo do seu imóvel. Peça um orçamento personalizado.</p></div><div class="cards">
+<article class="card"><div class="catalog-gallery">
+<img src="images/1001140217.jpg" alt="Fachada da Virtus Portões com portão de enrolar">
+<img src="images/1001132734.jpg" alt="Portão de correr cinza">
+<img src="images/1001132735.jpg" alt="Portão preto com detalhes horizontais">
+<img src="images/1001132733.jpg" alt="Conjunto de portões e porta social">
+<img src="images/1001132738.jpg" alt="Portão com desenho moderno e porta social">
+</div><h3>Portões automáticos</h3><p>Modelos basculantes e de correr, com opção de automatização conforme o projeto.</p><a class="btn btn-gold catalog-cta" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20port%C3%A3o%20autom%C3%A1tico" target="_blank" rel="noopener">Consultar modelo</a></article>
+<article class="card"><div class="art" role="img" aria-label="Imagem ilustrativa de grade metálica"><span></span></div><h3>Grades metálicas</h3><p>Grades sob medida para proteção de janelas, fachadas e outros espaços.</p><a class="btn btn-gold catalog-cta" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20grades%20met%C3%A1licas" target="_blank" rel="noopener">Consultar modelo</a></article>
+<article class="card"><div class="art rail" role="img" aria-label="Imagem ilustrativa de corrimão metálico"><span></span></div><h3>Corrimãos</h3><p>Corrimãos metálicos para escadas e acessos, com medidas e acabamento personalizados.</p><a class="btn btn-gold catalog-cta" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20corrim%C3%A3o" target="_blank" rel="noopener">Consultar modelo</a></article>
+</div><p style="text-align:center;color:#535b65;margin-top:24px;font-size:14px">Fotos de trabalhos e modelos de referência. Consulte disponibilidade, materiais e acabamentos pelo WhatsApp.</p></div></section>
+<section class="why" id="sobre"><div class="container why-grid"><div><div class="eyebrow">Virtus Portões</div><h2>Atendimento próximo, serviço bem-feito.</h2><p>Conte com a gente para conversar sobre seu projeto, avaliar as medidas e encontrar uma solução adequada para sua necessidade.</p><a class="btn btn-gold" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20meu%20projeto" target="_blank" rel="noopener">Fale com a equipe</a></div><div class="benefits"><div class="benefit"><strong>Feito para seu espaço</strong><span>Opções conforme medidas e projeto.</span></div><div class="benefit"><strong>Orçamento direto</strong><span>Converse pelo WhatsApp sem complicação.</span></div><div class="benefit"><strong>Acabamento caprichado</strong><span>Atenção aos detalhes de cada serviço.</span></div><div class="benefit"><strong>Instalação</strong><span>Consulte as condições para seu projeto.</span></div></div></div></section>
+<section class="contact" id="contato"><div class="container contact-grid"><div><div class="eyebrow">Vamos conversar?</div><h2>Peça seu orçamento</h2><p>Envie uma mensagem contando o que você precisa. A Virtus Portões vai poder orientar os próximos passos do seu projeto.</p><a class="btn btn-gold" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Virtus%20Port%C3%B5es%20e%20quero%20um%20or%C3%A7amento" target="_blank" rel="noopener">Chamar no WhatsApp</a></div><div class="contact-card"><div class="contact-item"><small>WhatsApp</small><strong>(11) 99339-2828</strong></div><div class="contact-item"><small>Instagram</small><strong>@virtusportões</strong></div><div class="contact-item"><small>Endereço</small><strong>Avenida Álvaro Guimarães, 90 — Planalto, São Bernardo do Campo - SP</strong></div><p style="font-size:13px;margin-bottom:0">Entre em contato para confirmar atendimento e agendar uma avaliação.</p></div></div></section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year">2026</span> Virtus Portões. Todos os direitos reservados.</span><span>Soluções em portões automáticos</span></div></footer>
+<a class="whatsapp-float" href="https://wa.me/5511993392828?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20com%20a%20Virtus%20Port%C3%B5es" target="_blank" rel="noopener" aria-label="Falar com a Virtus Portões pelo WhatsApp">WhatsApp ↗</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
